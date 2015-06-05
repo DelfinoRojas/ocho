@@ -2,7 +2,7 @@
 $(document).ready(function(e){
 // watchID se refiere a la aceleracion 'actual'
 
-var watchID=nul;
+var watchID=null;
 document.addEventListener("deviceready", Dispositivo_Listo, false);
 
 // Cuando esta listo el dispositivo
@@ -10,10 +10,10 @@ function Dispositivo_Listo() {
 Comienza();
 }
 
-//Empieza la 'observacion' de la aceleracion
+// Empieza la 'observacion' de la aceleracion
 function Comienza() {
 
-//Actualiza la aceleracion cada 2 segundos
+// Actualiza la aceleracion cada 2 segundos
 //
 var opciones = { frequency:2000 };
 
@@ -31,7 +31,7 @@ watchID=null;
 }
 
 // Correcto: Toma una captura de la aceleracion
-function Correcto(aceleration) {
+function Correcto(acceleration) {
 
 var element= document.getElementById('acelerometro');
 
